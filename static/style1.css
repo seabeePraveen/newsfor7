@@ -1,0 +1,35 @@
+.top-bar{
+    text-decoration: none;
+    font-size: 130%;
+    padding-right:4%;
+    color:black;
+}
+.top-bar:hover{
+    color:red;
+}
+#list{
+    padding-left:80%;
+}
+#list li{
+    display: inline;
+    list-style-type:none;
+}
+#main{
+    text-align:center;
+    padding-top: 10%;
+}
+#welcome{
+    font-size: 150%;
+    color:green;
+}
+#main2{
+    padding-top:2%;
+    text-align:center;
+    padding-left:1%;
+}
+#newsfor{
+    font-size:170%;
+}
+#seven{
+    font-size: 300%;
+}

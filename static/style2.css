@@ -1,0 +1,38 @@
+#body{
+    opacity:0.95;
+    background-color: rgba(0,70,68,255);
+}
+#div1{
+    padding-top: 15%;
+    padding-left: 43%;
+    padding-right: 40%;
+}
+#login{
+    padding-left:10%;
+    font-size: 130%;
+    font-weight: bolder;
+}
+#username{
+    width:73%;
+    height:5%;
+    padding-bottom:0;
+}
+#password{
+    width:73%;
+    height:5%;
+    padding-top:0;
+    padding-bottom:0;
+}
+#submit{
+    width:73%;
+    height:5%;
+    padding-top:0;
+}
+#login-to-index{
+    color:white;
+    padding-left:20%;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 120%;
+}

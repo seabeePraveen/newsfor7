@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            register
+        </title>
+    </head>
+    <body>
+        <div id="main">
+            Register Here!!
+        </div>
+        {% for message in messages%}
+        <h3>{{message}}</h3>
+        {% endfor %}
+        <form action="register" method="post">
+            {% csrf_token %}
+            <input type="text" name="username" placeholder="Enter your name">
+            <br>
+            <input type="email" name="email" placeholder="Enter your email">
+            <br>
+            <input type="password" name="password" placeholder="Enter your password">
+            <br>
+            <input type="password" name="password2" placeholder="Enter your password">
+            <br>
+            <input type="text" name="number" placeholder="Enter your mobile number">
+            <input type="submit">
+        </form>
+    </body>
+</html>

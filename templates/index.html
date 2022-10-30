@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+    <head>
+        <title>
+            News for 7
+        </title>
+        <link rel="stylesheet" href="{% static 'style1.css'%}">
+    </head>
+    <body>
+        <div>
+            <ul id="list">
+                <li><a href="{% url 'index' %}" class="top-bar">Home</a></li>
+                <li><a href="{% url 'contact' %}" class="top-bar">contact</a></li>
+                <li><a href="{% url 'login' %}" class="top-bar">login</a></li>
+                <li><a href="{% url 'register' %}" class="top-bar">register</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div id="welcome">
+                Welcome to 
+            </div>
+            <div id="main2">
+               <span id="newsfor">News for</span><span id="seven">7</span>
+            </div>
+        </div>
+        <div>
+         <span id="type"></span>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        var i=0,text;
+        text="This website is for my Seven Friends, where we share the latest news happened between us!"
+        function typing(){
+            if(i<text.length){
+                document.getElementById("type").innerHTML+= text.charAt(i);
+                i++;    
+                setTimeout(typing,50);
+            }
+        }
+        typing();
+    </script>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            add news
+        </title>
+    </head>
+    <body>
+        <form action="add" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="user" value="{{user.username}}">
+            <br>
+            <textarea name="title" cols="100" rows="1" placeholder="enter your title"></textarea>
+            <br><p>Enter the details</p>
+            <textarea name="details" cols="200" rows="25"></textarea>
+            <br>
+            <input type="submit">
+        </form>
+        <a href="{% url 'hotnews' %}">Go back</a>
+    </body>
+</html>
